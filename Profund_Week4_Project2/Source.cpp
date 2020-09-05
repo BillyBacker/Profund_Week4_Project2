@@ -29,7 +29,9 @@ int toDec(char In) {
 int main() {
 	char In[256];
 	unsigned long long Out = 0;
+	printf("Enter Hexadecimal number : ");
 	scanf("%s", &In);
+	printf("Decimal number : ");
 	for (int i = 0; i < len(In); i++) {
 		Out += powint(16, len(In) - i-1) * toDec(In[i]);
 	}
